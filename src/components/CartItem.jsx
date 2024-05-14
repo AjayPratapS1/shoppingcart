@@ -13,13 +13,13 @@ const CartItem = ({ item, itemIndex, cartLength }) => {
   };
   return (
     <>
-      <div className="max-w-full flex gap-10 p-5 mt-8">
-        <div className="w-[30%]">
+      <div className="max-w-full sm:w-full items-center flex flex-col sm:flex-row gap-10 p-5 mt-8">
+        <div className="w-[60%] sm:w-[30%]">
           <img src={item.image} alt="Item" className="w-full h-full object-contain" />
         </div>
-        <div className="w-[60%] flex flex-col justify-center gap-5">
-          <p className="text-xl font-semibold text-gray-700">{item.title}</p>
-          <p className="font-normal text-gray-700 ">
+        <div className="w-full sm:w-[60%] flex flex-col justify-center gap-5">
+          <p className="text-sm sm:text-xl font-semibold text-gray-700">{item.title}</p>
+          <p className="text-sm font-normal text-gray-700 ">
             {item.description.split(" ").slice(0, 15).join(" ") + "..."}
           </p>
 

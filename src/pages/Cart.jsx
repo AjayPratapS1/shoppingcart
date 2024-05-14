@@ -13,8 +13,8 @@ const Cart = () => {
   return (
     <div className="max-w-6xl w-10/12 flex items-center justify-center mx-auto">
       {cart.length > 0 ? (
-        <div className="w-full flex justify-between gap-10 p-4 ">
-          <div className="max-w-[60%]">
+        <div className="max-w-full flex flex-col items-center lg:flex-row lg:justify-between gap-10 p-4 ">
+          <div className=" max-w-[80%]  lg:max-w-[55%]">
             {cart.map((item, index) => (
               <CartItem
                 key={item.id}
@@ -25,7 +25,7 @@ const Cart = () => {
             ))}
           </div>
 
-          <div className="flex flex-col gap-3 max-w-[40%] w-[40%] p-5 mt-16">
+          <div className="flex flex-col gap-3  sm:w-[60%] sm:max-w-[60%] p-5 mt-16">
             <div className="mb-4">
               <p className="text-green-800 text-xl font-semibold">YOUR CART</p>
               <p className="text-green-700 text-5xl font-bold mb-4">SUMMARY</p>
